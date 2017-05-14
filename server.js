@@ -12,9 +12,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 //routes:
-app.use('/api', require('./routes/api'));
+app.use('/', require('./routes/api'));
 
 //start server:
-app.listen(6969,"0.0.0.0");
+app.listen(6969, "0.0.0.0");
 
 console.log('Server is running on port 6969')

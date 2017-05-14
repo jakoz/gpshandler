@@ -7,7 +7,7 @@ var Status = require('../models/status');
 
 //routes:
 Status.methods(['get', 'post', 'put', 'delete']);
-Status.register(router, '/status');
+Status.register(router, '/');
 
 //return router:
 module.exports = router;
